@@ -1,0 +1,83 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Spaghetti Aglio e Olio",
+        "ingredients": [
+          "Spaghetti",
+          "Garlic",
+          "Olive oil"
+        ],
+        "cooking_time": 15,
+        "calories": 400,
+        "image_url": "https://i.ibb.co.com/HzH6SPL/elena-leya-RHLtemk-EAa-M-unsplash.webp",
+        "description": "A classic Italian pasta dish that’s simple yet flavorful, made with just spaghetti, garlic, and olive oil."
+      },
+      {
+        "id": 2,
+        "name": "Grilled Cheese Sandwich",
+        "ingredients": [
+          "Bread",
+          "Cheddar cheese",
+          "Butter"
+        ],
+        "cooking_time": 10,
+        "calories": 350,
+        "image_url": "https://i.ibb.co.com/BVy7C5s/jasper-gribble-8-Rx-Cz-AKm-SOA-unsplash.webp",
+        "description": "A quick and delicious sandwich featuring crispy, buttery bread and gooey melted cheddar cheese."
+      },
+      {
+        "id": 3,
+        "name": "Chicken Stir-fry",
+        "ingredients": [
+          "Chicken breast",
+          "Bell peppers",
+          "Soy sauce"
+        ],
+        "cooking_time": 20,
+        "calories": 450,
+        "image_url": "https://i.ibb.co.com/b51JF4V/elana-selvig-j4o1l-Hc0-Po-E-unsplash.webp",
+        "description": "A healthy and vibrant stir-fry made with tender chicken breast, fresh bell peppers, and a savory soy sauce."
+      },
+      {
+        "id": 4,
+        "name": "Avocado Toast",
+        "ingredients": [
+          "Avocado",
+          "Whole grain bread",
+          "Lemon juice"
+        ],
+        "cooking_time": 5,
+        "calories": 250,
+        "image_url": "https://i.ibb.co.com/JpsfcNm/louis-hansel-xx-Ic-EAh-It-J0-unsplash.webp",
+        "description": "A light and refreshing toast topped with creamy avocado and a splash of lemon juice for a zesty finish."
+      },
+      {
+        "id": 5,
+        "name": "Vegetable Soup",
+        "ingredients": [
+          "Carrots",
+          "Celery",
+          "Vegetable broth"
+        ],
+        "cooking_time": 30,
+        "calories": 180,
+        "image_url": "https://i.ibb.co.com/Cz3JMgc/pixzolo-photography-ZB8-NK8c-B4-EE-unsplash.webp",
+        "description": "A comforting and nutritious soup made with fresh vegetables, perfect for a cozy meal."
+      },
+      {
+        "id": 6,
+        "name": "Fruit Salad",
+        "ingredients": [
+          "Strawberries",
+          "Blueberries",
+          "Honey"
+        ],
+        "cooking_time": 5,
+        "calories": 150,
+        "image_url": "https://i.ibb.co.com/Y838mzn/sofia-ciravegna-kh-Qeenz99-H0-unsplash.webp",
+        "description": "A refreshing and naturally sweet fruit salad, featuring juicy strawberries and blueberries, drizzled with honey."
+      }
+    ]
+  }
+  

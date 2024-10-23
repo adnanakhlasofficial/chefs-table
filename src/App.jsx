@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
+import RecipesSection from "./components/RecipesSection";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         {/* Banner */}
         <Banner />
         {/* Recipes */}
+        <RecipesSection />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 /* Google Font Lexend */
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 /* Tailwinds Directive */
 @tailwind base;
@@ -26,10 +26,13 @@
     @apply text-light_purple hover:text-dark_purple transition-colors;
   }
   .input-seach {
-    @apply bg-off-white py-3 px-6 rounded-full border-none outline-none pl-12 ;
+    @apply bg-off-white py-3 px-6 rounded-full border-none outline-none pl-12;
   }
-  .heading{
-    @apply text-center text-[3.25rem] font-bold leading-[4.75rem]
+  .heading {
+    @apply text-center text-[3.25rem] font-bold leading-[4.75rem];
+  }
+  .title {
+    @apply text-4xl font-semibold text-dark_purple text-center;
   }
   .desc {
     @apply text-center text-lg leading-7;
