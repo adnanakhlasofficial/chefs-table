@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         lexend: "Lexend",
       },
+      backgroundImage: {
+        "banner_bg": "linear-gradient(0deg, rgba(21,11,43,0.9) 0%, rgba(21,11,43,0) 100%), url('./src/assets/banner.webp')"
+      }
     },
   },
   // eslint-disable-next-line no-undef
