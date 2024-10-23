@@ -19,6 +19,9 @@
   .btn-secondary {
     @apply py-2 px-5 text-base;
   }
+  .card-btn {
+    @apply py-3 px-6;
+  }
 }
 
 @layer utilities {
@@ -36,6 +39,15 @@
   }
   .desc {
     @apply text-center text-lg leading-7;
+  }
+  .card-title {
+    @apply text-dark_gray text-xl font-semibold;
+  }
+  .card-desc {
+    @apply text-base text-gray leading-7;
+  }
+  .card-sub-title {
+    @apply text-lg font-medium text-dark_gray; 
   }
 }
 

@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="bg-banner_bg rounded-xl py-32 px-48 grid place-items-center gap-10">
+    <div className="bg-banner_bg bg-cover bg-top rounded-xl py-32 px-48 grid place-items-center gap-10">
 
       <div className="text-white space-y-6 max-w-[58rem]">
         <h1 className="heading">Discover an exceptional cooking class tailored for you!</h1>
