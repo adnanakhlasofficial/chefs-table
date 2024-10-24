@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const RecipeCard = ({ recipe, getRecipe}) => {
   return (
-    <div className="p-6 border-2 rounded-2xl border-[#D4D4D4] max-w-96 space-y-4 divide-y divide-[#E9E9E9]">
+    <div className="p-6 border-2 rounded-2xl border-[#D4D4D4] min-w-72 space-y-4 divide-y divide-[#E9E9E9]">
       <div>
         <img
           className="w-full h-52 object-cover object-center rounded-2xl"

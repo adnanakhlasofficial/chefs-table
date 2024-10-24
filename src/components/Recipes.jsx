@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Recipes = ({ recipes, getRecipe }) => {
   return (
-    <div className="w-2/3 flex flex-wrap gap-6 justify-center">
+    <div className="w-full md:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-4">
       {recipes.map((recipe) => (
         <RecipeCard key={recipe.id} recipe={recipe} getRecipe={getRecipe} />
       ))}

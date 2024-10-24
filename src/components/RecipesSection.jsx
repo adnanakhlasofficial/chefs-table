@@ -19,7 +19,7 @@ const RecipesSection = () => {
       console.log(isExist);
       !isExist ? setRecipeQueue([...recipeQueue, recipe]) : alert("Recipe has already been added.");
     }
-    
+
     
   return (
     <div className="my-24">
@@ -32,7 +32,7 @@ const RecipesSection = () => {
         </p>
       </div>
 
-      <div className="flex mt-12">
+      <div className="flex flex-col-reverse md:flex-row mt-12 gap-6">
         <Recipes recipes={recipes} getRecipe={getRecipe} />
         <Sidebar recipeQueue={recipeQueue} />
       </div>
