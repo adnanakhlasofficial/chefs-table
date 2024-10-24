@@ -14,7 +14,7 @@ const RecipeCard = ({ recipe, getRecipe}) => {
         />
       </div>
 
-      <div className="pt-4 space-y-4">
+      <div className="pt-4 space-y-4 min-h-[8.75rem]">
         <h2 className="card-title">{recipe.name}</h2>
         <p className="card-desc">{recipe.description}</p>
       </div>

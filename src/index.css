@@ -17,7 +17,7 @@
     @apply py-5 px-7 text-lg;
   }
   .btn-secondary {
-    @apply py-2 px-4 text-base;
+    @apply hover:underline hover:text-primary_hover text-primary font-medium;
   }
   .card-btn {
     @apply py-3 px-6;

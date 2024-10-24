@@ -7,6 +7,9 @@ const RecipesSection = () => {
 
   const [recipes, setRecipes] = useState([]);
   const [recipeQueue, setRecipeQueue] = useState([]);
+  const [preparedRecipe, setPreparedRecipe] = useState([])
+  const [totalTime, setTotalTime] = useState(0);
+  const [totalCalories, setTotalCalories] = useState(0);
 
     useEffect(()=>{
         fetch("/recipe.json")
@@ -16,8 +19,23 @@ const RecipesSection = () => {
 
     const getRecipe = (recipe) => {
       const isExist = recipeQueue.find(prevRecipe => prevRecipe.id === recipe.id)
-      console.log(isExist);
       !isExist ? setRecipeQueue([...recipeQueue, recipe]) : alert("Recipe has already been added.");
+    }
+
+    const prepareRecipe = (id) => {
+      // Find recipe want to delete
+      const deletedRecipe = recipeQueue.find(recipe => recipe.id === id);
+      setPreparedRecipe([...preparedRecipe, deletedRecipe]);
+
+      const updatedRecipeQueue = recipeQueue.filter(recipe => recipe.id !== id);
+      setRecipeQueue(updatedRecipeQueue)
+
+      
+    }
+
+    const caculateTimeAndCalories = (time, calories) => {
+      setTotalTime(totalTime + time);
+      setTotalCalories(totalCalories + calories);
     }
 
     
@@ -34,7 +52,7 @@ const RecipesSection = () => {
 
       <div className="flex flex-col-reverse md:flex-row mt-12 gap-6">
         <Recipes recipes={recipes} getRecipe={getRecipe} />
-        <Sidebar recipeQueue={recipeQueue} />
+        <Sidebar recipeQueue={recipeQueue} prepareRecipe={prepareRecipe} preparedRecipe={preparedRecipe} caculateTimeAndCalories={caculateTimeAndCalories} totalCalories={totalCalories} totalTime={totalTime}/>
       </div>
     </div>
   );
