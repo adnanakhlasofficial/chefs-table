@@ -21,10 +21,11 @@ Chef's Table is an interactive culinary platform designed to help you explore de
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Primary | ![#0BE58A](https://via.placeholder.com/10/0be58a?text=+) #0BE58A |
-| Primary Hover | ![#02B76C](https://via.placeholder.com/10/02b76c?text=+) #02B76C |
-| Dark Purple | ![#150B2B](https://via.placeholder.com/10/150b2b?text=+) #150B2B |
-| Light Purple | ![#5B546B](https://via.placeholder.com/10/5b546b?text=+) #5B546B |
+| Primary | ![#0BE58A](https://placehold.co/15x15/0be58a/0be58a.png) #0BE58A |
+| Primary Hover | ![#02B76C](https://placehold.co/15x15/02b76c/02b76c.png) #02B76C |
+| Dark Purple | ![#150B2B](https://placehold.co/15x15/150b2b/150b2b.png) #150B2B |
+| Light Purple | ![#5B546B](https://placehold.co/15x15/5b546b/5b546b.png) #5B546B |
+
 
 
 ## Explore Our Live Website
