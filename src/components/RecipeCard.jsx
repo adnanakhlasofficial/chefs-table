@@ -1,8 +1,9 @@
 import Time from "../assets/time.svg";
 import Burn from "../assets/burn.svg";
+
 import PropTypes from 'prop-types';
 
-const RecipeCard = ({ recipe }) => {
+const RecipeCard = ({ recipe, getRecipe}) => {
   return (
     <div className="p-6 border-2 rounded-2xl border-[#D4D4D4] max-w-96 space-y-4 divide-y divide-[#E9E9E9]">
       <div>
@@ -39,14 +40,15 @@ const RecipeCard = ({ recipe }) => {
       </div>
 
       <div className="pt-4">
-        <button className="btn card-btn w-full">Want To Cock</button>
+        <button onClick={() => getRecipe(recipe)} className="btn card-btn w-full">Want To Cock</button>
       </div>
     </div>
   );
 };
 
 RecipeCard.propTypes = {
-    recipe: PropTypes.object.isRequired
+    recipe: PropTypes.object.isRequired,
+    getRecipe: PropTypes.func.isRequired
 }
 
 export default RecipeCard;

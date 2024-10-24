@@ -1,7 +1,26 @@
 import Recipes from "./Recipes";
 import Sidebar from "./Sidebar";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const RecipesSection = () => {
+
+  const [recipes, setRecipes] = useState([]);
+  const [recipeQueue, setRecipeQueue] = useState([]);
+
+    useEffect(()=>{
+        fetch("/recipe.json")
+        .then(res => res.json())
+        .then(data => setRecipes(data.recipes))
+    } ,[])
+
+    const getRecipe = (recipe) => {
+      const isExist = recipeQueue.find(prevRecipe => prevRecipe.id === recipe.id)
+      console.log(isExist);
+      !isExist ? setRecipeQueue([...recipeQueue, recipe]) : alert("Recipe has already been added.");
+    }
+    
+    
   return (
     <div className="my-24">
       <div className="max-w-[51rem] mx-auto space-y-6">
@@ -14,8 +33,8 @@ const RecipesSection = () => {
       </div>
 
       <div className="flex mt-12">
-        <Recipes />
-        <Sidebar />
+        <Recipes recipes={recipes} getRecipe={getRecipe} />
+        <Sidebar recipeQueue={recipeQueue} />
       </div>
     </div>
   );
