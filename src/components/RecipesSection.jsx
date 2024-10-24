@@ -2,6 +2,7 @@ import Recipes from "./Recipes";
 import Sidebar from "./Sidebar";
 import { useEffect } from "react";
 import { useState } from "react";
+import Swal from 'sweetalert2'
 
 const RecipesSection = () => {
 
@@ -19,7 +20,11 @@ const RecipesSection = () => {
 
     const getRecipe = (recipe) => {
       const isExist = recipeQueue.find(prevRecipe => prevRecipe.id === recipe.id)
-      !isExist ? setRecipeQueue([...recipeQueue, recipe]) : alert("Recipe has already been added.");
+      !isExist ? setRecipeQueue([...recipeQueue, recipe]) : Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Recipe has already been to recipe queue!",
+      });
     }
 
     const prepareRecipe = (id) => {
